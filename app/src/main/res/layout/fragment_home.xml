@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomeFragment">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="92dp"
+        android:hint="Название"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="А теперь напишите что-нибудь прекрасное"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="215dp"
+        android:background="@android:color/background_light"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="277dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="13dp"
+        android:background="@android:color/white"
+        android:src="@android:drawable/ic_menu_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMore"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="417dp"
+        android:background="@android:color/white"
+        android:src="@android:drawable/ic_menu_more"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnShare"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_add"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMore" />
+
+</android.support.constraint.ConstraintLayout>
